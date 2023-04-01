@@ -22,6 +22,10 @@
 		158A3EE329D7047D002324A4 /* MyList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A3EE229D7047D002324A4 /* MyList+CoreDataProperties.swift */; };
 		158A3EE629D705C6002324A4 /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A3EE529D705C6002324A4 /* AddNewListView.swift */; };
 		158A3EE829D70745002324A4 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158A3EE729D70745002324A4 /* ColorPickerView.swift */; };
+		82CE3C2029D8BC8E0065C52B /* MyListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE3C1F29D8BC8E0065C52B /* MyListDetailView.swift */; };
+		82CE3C2229D8C2F10065C52B /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE3C2129D8C2F10065C52B /* ReminderListView.swift */; };
+		82CE3C2429D8C4240065C52B /* RemindersCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE3C2329D8C4240065C52B /* RemindersCellView.swift */; };
+		82CE3C2729D8C6AE0065C52B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE3C2629D8C6AE0065C52B /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		158A3EE229D7047D002324A4 /* MyList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		158A3EE529D705C6002324A4 /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
 		158A3EE729D70745002324A4 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		82CE3C1F29D8BC8E0065C52B /* MyListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailView.swift; sourceTree = "<group>"; };
+		82CE3C2129D8C2F10065C52B /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		82CE3C2329D8C4240065C52B /* RemindersCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCellView.swift; sourceTree = "<group>"; };
+		82CE3C2629D8C6AE0065C52B /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,7 @@
 		158A3ECA29D6F310002324A4 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				82CE3C2529D8C6A10065C52B /* Extensions */,
 				158A3ED929D6F32F002324A4 /* Providers */,
 				156FBF6629D716EE001E81DA /* Transformers */,
 				156FBF6329D715CB001E81DA /* Services */,
@@ -136,8 +145,19 @@
 				158A3EE729D70745002324A4 /* ColorPickerView.swift */,
 				156FBF6929D71F43001E81DA /* MyListView.swift */,
 				156FBF6B29D72030001E81DA /* MyListCellView.swift */,
+				82CE3C1F29D8BC8E0065C52B /* MyListDetailView.swift */,
+				82CE3C2129D8C2F10065C52B /* ReminderListView.swift */,
+				82CE3C2329D8C4240065C52B /* RemindersCellView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		82CE3C2529D8C6A10065C52B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				82CE3C2629D8C6AE0065C52B /* Date+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,13 +236,17 @@
 				158A3EDE29D6F44A002324A4 /* RemindersModel.xcdatamodeld in Sources */,
 				156FBF6E29D72061001E81DA /* PreviewData.swift in Sources */,
 				156FBF6829D71700001E81DA /* UIColorTransformer.swift in Sources */,
+				82CE3C2429D8C4240065C52B /* RemindersCellView.swift in Sources */,
 				158A3ECE29D6F310002324A4 /* HomeView.swift in Sources */,
+				82CE3C2729D8C6AE0065C52B /* Date+Extensions.swift in Sources */,
 				158A3EE329D7047D002324A4 /* MyList+CoreDataProperties.swift in Sources */,
 				158A3EE629D705C6002324A4 /* AddNewListView.swift in Sources */,
 				158A3EE129D7046B002324A4 /* MyList+CoreDataClass.swift in Sources */,
 				158A3ECC29D6F310002324A4 /* ReminderApp.swift in Sources */,
 				156FBF6A29D71F43001E81DA /* MyListView.swift in Sources */,
+				82CE3C2229D8C2F10065C52B /* ReminderListView.swift in Sources */,
 				156FBF6529D715E3001E81DA /* ReminderService.swift in Sources */,
+				82CE3C2029D8BC8E0065C52B /* MyListDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +372,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Reminder/Preview Content\"";
-				DEVELOPMENT_TEAM = 3X884PBRG2;
+				DEVELOPMENT_TEAM = 4DGNYHY76F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -364,8 +389,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.karlis.Reminder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karlis.ReminderApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -380,10 +406,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Reminder/Preview Content\"";
-				DEVELOPMENT_TEAM = 3X884PBRG2;
+				DEVELOPMENT_TEAM = 4DGNYHY76F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -396,8 +423,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.karlis.Reminder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karlis.ReminderApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
