@@ -38,6 +38,11 @@ class ReminderService {
         
     }
     
+    static func deleteReminder(reminder: Reminder) throws {
+        viewContext.delete(reminder)
+        try save()
+    }
+    
     static func saveReminderToMyList(myList: MyList, reminderTitle: String) throws {
         let reminder = Reminder(context: viewContext)
         reminder.title = reminderTitle

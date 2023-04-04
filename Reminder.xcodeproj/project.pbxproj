@@ -26,6 +26,7 @@
 		15A1400629DB01D70062CDB5 /* RemindersEditConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1400529DB01D70062CDB5 /* RemindersEditConfig.swift */; };
 		15A1400929DB03AA0062CDB5 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1400829DB03AA0062CDB5 /* CustomOperators.swift */; };
 		15A1400B29DB09CA0062CDB5 /* SelectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1400A29DB09CA0062CDB5 /* SelectListView.swift */; };
+		8255CCA829DC5FBC00651D14 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8255CCA729DC5FBC00651D14 /* Delay.swift */; };
 		82CE3C2029D8BC8E0065C52B /* MyListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE3C1F29D8BC8E0065C52B /* MyListDetailView.swift */; };
 		82CE3C2229D8C2F10065C52B /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE3C2129D8C2F10065C52B /* ReminderListView.swift */; };
 		82CE3C2429D8C4240065C52B /* RemindersCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CE3C2329D8C4240065C52B /* RemindersCellView.swift */; };
@@ -53,6 +54,7 @@
 		15A1400529DB01D70062CDB5 /* RemindersEditConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersEditConfig.swift; sourceTree = "<group>"; };
 		15A1400829DB03AA0062CDB5 /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		15A1400A29DB09CA0062CDB5 /* SelectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListView.swift; sourceTree = "<group>"; };
+		8255CCA729DC5FBC00651D14 /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		82CE3C1F29D8BC8E0065C52B /* MyListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailView.swift; sourceTree = "<group>"; };
 		82CE3C2129D8C2F10065C52B /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
 		82CE3C2329D8C4240065C52B /* RemindersCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCellView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				15A1400829DB03AA0062CDB5 /* CustomOperators.swift */,
+				8255CCA729DC5FBC00651D14 /* Delay.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				15A1400629DB01D70062CDB5 /* RemindersEditConfig.swift in Sources */,
 				82CE3C2729D8C6AE0065C52B /* Date+Extensions.swift in Sources */,
 				15A1400929DB03AA0062CDB5 /* CustomOperators.swift in Sources */,
+				8255CCA829DC5FBC00651D14 /* Delay.swift in Sources */,
 				15A1400329DB00990062CDB5 /* ReminderDetailView.swift in Sources */,
 				158A3EE329D7047D002324A4 /* MyList+CoreDataProperties.swift in Sources */,
 				158A3EE629D705C6002324A4 /* AddNewListView.swift in Sources */,
